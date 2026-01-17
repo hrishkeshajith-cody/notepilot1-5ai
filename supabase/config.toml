@@ -1,0 +1,7 @@
+project_id = "qiejgazjhnhgtwhfylpp"
+
+[functions.parse-pdf]
+verify_jwt = false
+
+[functions.generate-study-pack]
+verify_jwt = false
