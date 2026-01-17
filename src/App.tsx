@@ -4,6 +4,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "next-themes";
+import { Analytics } from "@vercel/analytics/react";
 import { AuthProvider } from "@/hooks/useAuth";
 import { ThemePreferencesProvider } from "@/hooks/useThemePreferences";
 import { NotePilotProvider } from "@/contexts/NotePilotContext";
@@ -42,6 +43,7 @@ const App = () => (
                 </Routes>
               </BrowserRouter>
               <NotePilotChat />
+              <Analytics />
             </TooltipProvider>
           </NotePilotProvider>
         </AuthProvider>
